@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-*+q#bgy!0k_u7*l*m3le4ff@6b72xzc11r!xv9af-^hb_jwn8t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # DEBUG = False
-ALLOWED_HOSTS = ['*']
+
+# settings.py
+ALLOWED_HOSTS = ['attendance-backend-mjch.onrender.com', 'localhost', '127.0.0.1']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
