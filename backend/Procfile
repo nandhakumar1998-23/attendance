@@ -1,1 +1,1 @@
-web: gunicorn DRF-React.wsgi
+web: gunicorn attendance.wsgi
