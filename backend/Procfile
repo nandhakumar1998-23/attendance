@@ -1,1 +1,2 @@
-web: gunicorn attendance.wsgi
+web: gunicorn backend.wsgi
+
