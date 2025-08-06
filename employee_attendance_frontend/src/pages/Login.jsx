@@ -11,7 +11,9 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://127.0.0.1:8000/api/accounts/login/', form);
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/accounts/login/`, data)
+
+      // const res = await axios.post('http://127.0.0.1:8000/api/accounts/login/', form);
       localStorage.setItem('token', res.data.token);
       navigate('/');
     } catch (error) {
