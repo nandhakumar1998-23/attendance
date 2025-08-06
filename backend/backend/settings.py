@@ -27,10 +27,19 @@ SECRET_KEY = 'django-insecure-*+q#bgy!0k_u7*l*m3le4ff@6b72xzc11r!xv9af-^hb_jwn8t
 DEBUG = False
 
 # settings.py
-ALLOWED_HOSTS = ['attendance-backend-mjch.onrender.com', 'localhost', '127.0.0.1']
+# ALLOWED_HOSTS = ['attendance-backend-mjch.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+import os
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 
 # Application definition
 
